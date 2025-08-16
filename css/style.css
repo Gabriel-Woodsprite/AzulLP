@@ -1,0 +1,43 @@
+:root {
+	--titles: "PT Sans", sans-serif;
+	--text: "Pompiere", sans-serif;
+	--special-Text: "Edu NSW ACT Cursive", cursive;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #f5eedd;
+}
+h1 {
+	font-family: var(--titles);
+	font-weight: bold;
+}
+p {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.navegacion {
+	display: flex;
+	padding: 0 5rem;
+}
+
+header {
+	display: flex;
+	font-family: var(--text);
+	background-color: #06202b;
+	padding: 0 1rem;
+	color: #ffff;
+}
+
+main {
+	padding: 0 1rem;
+}

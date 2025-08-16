@@ -34,12 +34,39 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 5rem;
+	padding: 0 5rem; /* spacing from borders */
+	height: 70px; /* adjust as you like */
 }
-.info {
+
+/* left section */
+.navegacion .info {
 	display: flex;
-	align-content: space-between;
-	justify-content: space-between;
+	gap: 1rem;
+}
+
+/* right section */
+.navegacion .otracosa {
+	display: flex;
+	gap: 1rem;
+}
+
+/* center title */
+.navegacion .title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.navegacion a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+
+.navegacion h1 {
+	margin: 0;
+	font-size: 1.5rem;
 }
 
 header {

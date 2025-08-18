@@ -1,0 +1,37 @@
+@use "variables" as v;
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.headerTitle {
+	transition: transform 0.6s ease, opacity 0.6s ease;
+
+	&.hide {
+		transform: translateX(100px) scale(0.8);
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+.profileWrap .sideText {
+	opacity: 0;
+	pointer-events: none;
+	font-family: v.$special-text;
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	top: 90%;
+	transform: translateY(-50%);
+	transition: opacity 0.5s ease;
+
+	&.left {
+		left: -60px; // adjust spacing
+	}
+	&.right {
+		right: -105px; // adjust spacing
+	}
+}

@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+.navegacionContainer {
+	background-color: v.$dark-layout;
+	min-width: 100%;
+	padding: 2rem 0;
+	padding-top: 160px;
+	position: relative;
+	z-index: 1;
+	border-radius: 0 0 2rem 2rem;
+}
+
+.navegacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5rem;
+	height: 70px;
+
+	.info {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	.title {
+		display: flex;
+		text-align: center;
+
+		&__down {
+			font-family: v.$special-text;
+			color: v.$main-color;
+			font-size: 30px;
+			font-weight: lighter;
+			margin: 0 0 1rem 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: v.$main-color;
+	}
+}

@@ -10,44 +10,53 @@
 			href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pompiere&display=swap"
 			rel="stylesheet" />
 
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/normalizer.css" />
+		<link rel="stylesheet" href="public/build/css/app.css" />
+		<link rel="stylesheet" href="public/build/css/utilities.css" />
 		<title>BlueBlueBlue</title>
 	</head>
 	<body>
 		<div class="mainContainer">
+			<!-- EMPIEZA HEADER -->
 			<header>
-				<div class="flip-card">
-					<div class="flip-card-inner">
-						<!-- Front side -->
-						<div class="flip-card-front">
-							<img src="img/profile.png" alt="Profile Picture" />
-						</div>
-						<!-- Back side -->
-						<div class="flip-card-back">
-							<a
-								href="https://www.instagram.com/azulherreraurb"
-								target="_blank">
-								<img src="img/instagram.png" alt="Instagram" />
-							</a>
+				<!-- EMPIEZA FLIP CARD PROFILE -->
+				<div class="profileWrap">
+					<span class="sideText left">Azul</span>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="public/build/img/profile.png" alt="Profile Picture" />
+							</div>
+							<div class="flip-card-back">
+								<a
+									href="https://www.instagram.com/azulherreraurb"
+									target="_blank">
+									<img src="public/build/img/instagram.png" alt="Instagram" />
+								</a>
+							</div>
 						</div>
 					</div>
+					<span class="sideText right">Herrera</span>
 				</div>
+				<!-- TERMINA FLIP CARD PROFILE -->
 
+				<!-- EMPIEZA NAVEGACIÓN | LINKS | BOTONES -->
 				<div class="navegacionContainer">
 					<nav class="navegacion">
+						<!-- NAV LINKS -->
 						<div class="info">
 							<p><a class="linkHover" href="">Mis Links</a></p>
 							<p><a class="linkHover" href="">Sobre mi</a></p>
 							<p><a class="linkHover" href="#">Contacto</a></p>
 						</div>
+
+						<!-- TITULO -->
+						<div class="title">
+							<h2 class="title__down">Licenciada en Pedagogía</h2>
+						</div>
 					</nav>
 
-					<div class="tituloHeader">
-						<h2 class="tituloHeader__up">Azul Itzayana Herrera Urbina</h2>
-						<h2 class="tituloHeader__down">Licenciada en Pedagogía</h2>
-					</div>
-					<div class="conocemeContainer">
+					<!-- BOTÓN CONOCEME -->
+					<div class="conoceme">
 						<a href="#" class="button type--C">
 							<div class="button__line"></div>
 							<div class="button__line"></div>
@@ -57,14 +66,18 @@
 						</a>
 					</div>
 				</div>
+				<!-- TERMINA NAVEGACIÓN | LINKS | BOTONES -->
 			</header>
+			<!-- TERMINA HEADER -->
+
 			<main>
 				<div class="habilidadesContainer">
 					<h2>Mis Habilidades</h2>
 				</div>
 			</main>
 		</div>
+
 		<footer></footer>
-		<script src="js/app.js"></script>
+		<script src="public/build/js/bundle.js"></script>
 	</body>
 </html>

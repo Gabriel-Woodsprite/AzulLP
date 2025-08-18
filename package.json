@@ -1,0 +1,29 @@
+{
+	"name": "azullp",
+	"version": "1.0.0",
+	"description": "��#\u0000 \u0000A\u0000z\u0000u\u0000l\u0000L\u0000P\u0000\r\u0000 \u0000",
+	"main": "index.js",
+	"scripts": {
+		"css": "gulp css",
+		"dev": "gulp dev"
+	},
+	"devDependencies": {
+		"cssnano": "^7.0.7",
+		"del": "^7.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-terser": "^2.1.0",
+		"gulp-webp": "^4.0.1",
+		"sass": "^1.49.9"
+	},
+	"author": "",
+	"license": "ISC"
+}

@@ -68,9 +68,9 @@
 }
 
 /* When hover happens on profileWrap → trigger page changes */
+
 .profileWrap:hover {
-	~ .navegacionContainer,
-	~ main {
+	~ .navegacionContainer {
 		transform: translateY(120px); // push everything down
 		transition: transform 0.5s ease;
 	}

@@ -1,13 +1,25 @@
 @use "variables" as v;
 
 .navegacionContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
 	background-color: v.$dark-layout;
 	min-width: 100%;
 	padding: 2rem 0;
-	padding-top: 160px;
+	// padding-top: 160px;
+	height: 420px;
 	position: relative;
 	z-index: 1;
 	border-radius: 0 0 2rem 2rem;
+
+	.navegacion,
+	.conoceme {
+		transition: transform 0.6s ease;
+		transform: translateY(100px);
+	}
 }
 
 .navegacion {
@@ -16,7 +28,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0 5rem;
-	height: 70px;
+	height: 8.5rem;
 
 	.info {
 		display: flex;
@@ -41,5 +53,13 @@
 		text-decoration: none;
 		font-weight: bold;
 		color: v.$main-color;
+		:hover {
+			color: v.$third-color;
+		}
 	}
+}
+
+.profileWrap:hover ~ .navegacionContainer .navegacion,
+.profileWrap:hover ~ .navegacionContainer .conoceme {
+	transform: translateY(0); // inner content moves up to top
 }

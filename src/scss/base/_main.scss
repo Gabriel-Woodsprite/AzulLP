@@ -1,5 +1,21 @@
-.habilidadesContainer {
+@use "base/variables" as v;
+
+.main {
+	text-align: center;
 	h2 {
-		padding: 1rem 0;
+		margin-bottom: 0.5rem;
+	}
+	p {
+		margin: 0.5rem 0 2rem 0;
+		padding: 0 15rem;
+	}
+
+	&__habilidades {
+		margin-bottom: 1.5rem;
+		// background-color: lime;
+	}
+	&__sobreMi {
+		color: v.$main-color;
+		background-color: v.$third-color;
 	}
 }

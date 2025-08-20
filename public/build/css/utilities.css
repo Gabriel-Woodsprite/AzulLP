@@ -1,5 +1,17 @@
-*/
 /* From Uiverse.io by himanshu9682 */
+
+:root {
+	--main-color: #f5eedd;
+	--second-color: #7be3d0;
+	--third-color: #017b7e;
+	--dark-layout: #011a27;
+
+	--titles: "PT Sans", sans-serif;
+	--text: "Pompiere", sans-serif;
+	--special-text: "Edu NSW ACT Cursive", cursive;
+
+	--office-color: #eb3c00;
+}
 .type--A {
 	--line_color: #555555;
 	--back_color: #ffecf6;
@@ -253,4 +265,106 @@
 }
 .button:not(:last-child) {
 	margin-bottom: 64px;
+}
+
+/* 
+/* 
+/* 
+/* 
+/* 
+
+MIS HABILIDADES HOVER DESIGN
+
+/* 
+/* 
+/* 
+/* 
+*/
+
+/* From Uiverse.io by joe-watson-sbf */
+.card {
+	display: flex;
+	align-items: center;
+	background: var(--main-color);
+	width: 70%;
+	height: 30rem;
+	border-radius: 10px;
+	padding: 0.4em;
+	gap: 5px;
+}
+
+.card .card__content {
+	height: 100%;
+	flex: 1;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: all 0.5s;
+	background: var(--back_color);
+	border: 2px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-family: var(--special-text);
+	font-size: 20px;
+}
+
+.card .card__content span {
+	position: absolute;
+	transition: all 0.5s;
+	color: var(--dark-layout);
+	letter-spacing: 0.1em;
+	font-size: 25px;
+
+	transform: rotate(-90deg);
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+	translate: -50% -50%;
+}
+
+.card .card__content .desc {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s;
+	text-align: center;
+	padding: 1em;
+	color: var(--dark-layout);
+}
+
+.card .card__content:hover {
+	flex: 10;
+}
+
+.card .hability--A:hover {
+	background-color: var(--office-color);
+}
+.card .hability--B:hover {
+	background-color: #0272bc;
+}
+.card .hability--C:hover {
+	background-color: #0d9c4a;
+}
+.card .hability--D:hover {
+	background-color: #e8a183;
+}
+.card .hability--E:hover {
+	background-color: #0f4f66;
+}
+
+.card .card__content:hover span {
+	color: var(--main-color);
+	transform: rotate(0);
+	top: 20px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+.card .card__content:hover .desc {
+	color: var(--main-color);
+	text-align: center;
+	opacity: 1;
+	transform: translateY(0);
 }

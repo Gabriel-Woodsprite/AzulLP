@@ -10,8 +10,12 @@
 				span {
 					transform: none;
 				}
+
+				span {
+					width: 100%;
+				}
 				&__content:hover {
-					flex: 35;
+					flex: 30;
 				}
 			}
 		}

@@ -12,6 +12,7 @@ html {
 
 body {
 	background-color: v.$main-color;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -48,4 +49,8 @@ a {
 	&:hover {
 		color: v.$third-color;
 	}
+}
+
+.mobileTitle {
+	display: none;
 }

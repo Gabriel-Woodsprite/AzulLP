@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+	.main {
+		p:not(.desc) {
+			padding: 0.2rem;
+		}
+		&__habilidades {
+			.card {
+				flex-direction: column;
+				width: 100%;
+				span {
+					transform: none;
+				}
+				&__content:hover {
+					flex: 35;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+}

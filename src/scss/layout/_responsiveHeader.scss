@@ -1,0 +1,62 @@
+/* Responsive layout */
+@media (max-width: 768px) {
+	.mobileTitle {
+		display: none;
+	}
+
+	.navegacion {
+		padding: 0 2rem;
+
+		.title__down {
+			font-size: clamp(1.5rem, 4vw, 1.6rem);
+		}
+	}
+
+	.flip-card {
+		width: 200px;
+		height: 200px;
+		// margin-bottom: -100px; // scale with size
+	}
+}
+
+@media (max-width: 480px) {
+	.navegacionContainer {
+		justify-content: space-between;
+	}
+
+	.mobileTitle {
+		display: block;
+		position: relative;
+		top: 100px;
+		z-index: 1000;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		font-size: 1.5rem;
+	}
+
+	.navegacion {
+		margin-top: 2rem;
+		padding: 0 1rem;
+		.info {
+			margin-bottom: 1rem;
+			flex-direction: column;
+			gap: 2rem;
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.flip-card {
+		width: 160px;
+		height: 160px;
+		margin-bottom: -80px;
+	}
+
+	.profileWrap .sideText {
+		display: none;
+	}
+	.conoceme {
+		display: none;
+	}
+}

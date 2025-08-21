@@ -21,84 +21,18 @@ header {
 	opacity: 0;
 	pointer-events: none;
 	font-family: v.$special-text;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 3vw, 1.5rem);
 	font-weight: bold;
 	position: absolute;
 	top: 90%;
 	transform: translateY(-50%);
 	transition: opacity 0.5s ease;
+	// transition: opacity 0.5s ease, left 0.4s ease, right 0.4s ease;
 
 	&.left {
-		left: -60px; // adjust spacing
+		left: -8vw; // responsive offset instead of -60px
 	}
 	&.right {
-		right: -105px; // adjust spacing
+		right: -12vw; // responsive offset instead of -105px
 	}
 }
-
-/* ----------------------- */
-/* SCROLLED STATE          */
-/* ----------------------- */
-
-// AAAAAAAAAAAAAAAAAAAAAAAAAAA
-// .header {
-// 	position: sticky;
-// 	top: 0;
-// 	width: 100%;
-// 	z-index: 999;
-// 	transition: all 0.6s ease;
-// }
-
-// .headerContent {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	padding: 2rem 0;
-// 	transition: all 0.6s ease;
-// }
-
-// /* Title + nav hidden in hero mode */
-// .siteTitle,
-// .navegacion {
-// 	opacity: 0;
-// 	transform: translateY(20px);
-// 	transition: all 0.6s ease;
-// }
-
-// .conoceme {
-// 	margin-top: 1rem;
-// 	transition: opacity 0.6s ease;
-// }
-// // AAAAAAAAAAAAAAAAAAAAAAAAAAA
-
-// .header.scrolled .headerContent {
-// 	flex-direction: row;
-// 	justify-content: space-between;
-// 	align-items: center;
-// 	padding: 1rem 2rem;
-// 	background: rgba(20, 20, 20, 0.9);
-// 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-// }
-
-// .header.scrolled .profileWrap {
-// 	order: 1;
-// }
-
-// .header.scrolled .siteTitle {
-// 	order: 2;
-// 	opacity: 1;
-// 	transform: translateY(0);
-// }
-
-// .header.scrolled .navegacion {
-// 	order: 3;
-// 	display: flex;
-// 	gap: 1.5rem;
-// 	opacity: 1;
-// 	transform: translateY(0);
-// }
-
-// .header.scrolled .conoceme {
-// 	display: none;
-// }

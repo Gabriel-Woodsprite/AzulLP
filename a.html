@@ -1,0 +1,68 @@
+<div class="profileWrap">
+	<span class="sideText left">Azul</span>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<img src="public/build/img/profile.png" alt="Profile Picture" />
+			</div>
+			<div class="flip-card-back">
+				<a href="https://www.instagram.com/azulherreraurb" target="_blank">
+					<img src="public/build/img/instagram.png" alt="Instagram" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<span class="sideText right">Herrera</span>
+</div>
+<!-- FLIP CARD: -->
+@use "base/variables" as v; .profileWrap { position: relative; display: flex;
+justify-content: center; align-items: center; margin: 2rem 0; .flip-card {
+width: 300px; height: 300px; perspective: 1000px; position: relative; z-index:
+2; margin-bottom: -150px; .flip-card-inner { position: relative; width: 100%;
+height: 100%; transform-style: preserve-3d; transition: transform 0.8s ease;
+&:hover { transform: rotateY(180deg); } } &:hover .flip-card-inner { transform:
+rotateY(180deg); } .flip-card-front, .flip-card-back { position: absolute;
+width: 100%; height: 100%; backface-visibility: hidden; border-radius: 100%;
+overflow: hidden; top: 0; left: 0; } .flip-card-front img { width: 100%; height:
+100%; object-fit: cover; // display: block; } .flip-card-back { background:
+v.$main-color; display: flex; flex-direction: column; justify-content: center;
+align-items: center; transform: rotateY(180deg); gap: 10px; img { width:
+max-content; height: max-content; } } } } /* When hover happens on profileWrap →
+trigger page changes */ .profileWrap:hover { ~ .navegacionContainer { transform:
+translateY(120px); // push everything down transition: transform 0.5s ease; }
+.sideText { opacity: 1; pointer-events: auto; } ~ .headerTitle h1 { opacity: 0;
+transform: translateY(-20px); } }
+
+<!-- END FLIP CARD: -->
+
+<!--  HEADER: -->
+@use "variables" as v; header { position: relative; display: flex;
+flex-direction: column; align-items: center; width: 100%; } .headerTitle {
+transition: transform 0.6s ease, opacity 0.6s ease; &.hide { transform:
+translateX(100px) scale(0.8); opacity: 0; z-index: 0; } } .profileWrap .sideText
+{ opacity: 0; pointer-events: none; font-family: v.$special-text; font-size:
+clamp(1rem, 3vw, 1.5rem); font-weight: bold; position: absolute; top: 90%;
+transform: translateY(-50%); transition: opacity 0.5s ease; // transition:
+opacity 0.5s ease, left 0.4s ease, right 0.4s ease; &.left { left: -8vw; //
+responsive offset instead of -60px } &.right { right: -12vw; // responsive
+offset instead of -105px } }
+
+<!-- END HEADER: -->
+<!-- NAV -->
+@use "variables" as v; .navegacionContainer { display: flex; flex-direction:
+column; justify-content: flex-start; align-items: center; background-color:
+v.$dark-layout; min-width: 100%; padding: 2rem 0; // padding-top: 160px; height:
+420px; position: relative; z-index: 1; .navegacion, .conoceme, .down-arrow {
+transition: transform 0.6s ease; transform: translateY(100px); } } .navegacion {
+display: flex; flex-direction: column; justify-content: center; align-items:
+center; padding: 0 5rem; height: 8.5rem; .info { display: flex; align-items:
+center; gap: 4rem; } .title { display: flex; text-align: center; &__down {
+font-family: v.$special-text; color: v.$main-color; font-size: 30px;
+font-weight: lighter; margin: 0 0 1rem 0; } } a { text-decoration: none;
+font-weight: bold; color: v.$main-color; :hover { color: v.$third-color; } } }
+.profileWrap:hover ~ .navegacionContainer .navegacion, .profileWrap:hover ~
+.navegacionContainer .conoceme { transform: translateY(0); // inner content
+moves up to top } .profileWrap:hover ~ .navegacionContainer .down-arrow {
+transform: translateY(0); }
+
+<!-- END NAV -->

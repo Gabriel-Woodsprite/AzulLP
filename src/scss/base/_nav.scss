@@ -15,7 +15,8 @@
 	z-index: 1;
 
 	.navegacion,
-	.conoceme {
+	.conoceme,
+	.down-arrow {
 		transition: transform 0.6s ease;
 		transform: translateY(100px);
 	}
@@ -61,4 +62,8 @@
 .profileWrap:hover ~ .navegacionContainer .navegacion,
 .profileWrap:hover ~ .navegacionContainer .conoceme {
 	transform: translateY(0); // inner content moves up to top
+}
+
+.profileWrap:hover ~ .navegacionContainer .down-arrow {
+	transform: translateY(0);
 }
